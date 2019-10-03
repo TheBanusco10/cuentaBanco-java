@@ -16,7 +16,6 @@ public final class App {
     }
 
     public static void ingresarDatos(Cliente cliente) { 
-    	JOptionPane.showMessageDialog(null, "Para ingresar en la cuenta;\nuser: maK\npassword: maK12", "Info", JOptionPane.INFORMATION_MESSAGE);
         cliente.setUsuario(JOptionPane.showInputDialog(null, "Introduzca su usuario: ", "Ingresar datos", JOptionPane.INFORMATION_MESSAGE));   
         cliente.setContrasenia(JOptionPane.showInputDialog(null, "Introduzca su contraseña: ", "Ingresar datos", JOptionPane.INFORMATION_MESSAGE));
     }
@@ -30,6 +29,7 @@ public final class App {
         Cliente cliente1 = new Cliente();
         int opcion;
 
+        JOptionPane.showMessageDialog(null, "Para ingresar en la cuenta;\nuser: " + user + "\npassword: " + password, "Info", JOptionPane.INFORMATION_MESSAGE);
         ingresarDatos(cliente1);
 
         try {
