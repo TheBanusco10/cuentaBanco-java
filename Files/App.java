@@ -26,7 +26,7 @@ public final class App {
     }
 
     public static void main(String[] args) {
-        String user = "maK", password = "maK12";
+        String user = "Hello", password = "123";
         Cliente cliente1 = new Cliente();
         int opcion;
 
